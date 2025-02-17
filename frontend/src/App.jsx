@@ -15,11 +15,21 @@ function App() {
 
   useEffect(() => {
     prism.highlightAll()
-  }, [])
+  }, [code])
 
   async function reviewCode() {
-    const response = await axios.post('http://localhost:4000/api/get-review', { code })
-    setReview(response.data)
+    try {
+      const response = await axios.post('http://localhost:4000/api/get-review', { code });
+
+      if (response.data.success) {
+        setReview(response.data.review);
+      } else {
+        setReview("❌ Error: " + response.data.message);
+      }
+    } catch (error) {
+      console.error("API Error:", error);
+      setReview("⚠️ Failed to fetch review. Please try again.");
+    }
   }
 
   return (
