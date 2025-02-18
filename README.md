@@ -11,3 +11,5 @@ The AI identifies flaws like improper handling of negative numbers, potential in
 It also suggests a corrected version of the code.
 This project is useful for developers who want instant, automated feedback on their code quality,
 making it a valuable learning and debugging tool for JavaScript programmers of all levels.
+
+![Image](https://github.com/user-attachments/assets/f5aac369-3586-4e0a-b995-c7ba3594cd69)
