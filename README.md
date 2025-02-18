@@ -1,4 +1,4 @@
-*AI-Powered Code Reviewer 
+**AI-Powered Code Reviewer **
 
 This project is a web-based code review tool built using React, designed to help developers analyze and improve their JavaScript code.
 It features a live code editor where users can write or paste their code, and upon clicking the "Review" button, the tool sends the code to an AI-powered backend for analysis using Axios. 
